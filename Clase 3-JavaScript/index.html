@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var miArreglo = ["Juan", "Esteban", 10, 20];
+        alert(miArreglo[0]); //pos 0
+        alert(miArreglo[1]); // pos 1
+
+        var otraForma = new Array("Juan", "Esteban", 10, 20);
+
+        //cantidad de elementos
+        alert(otraForma.length);
+
+        var unaPersona = //JSON javascript
+        {
+            apellido: "Salcedo",
+            nombre: "Guillermo",
+            dni: 34594203,
+            edad: 29
+        };
+
+        alert(unaPersona.apellido + " " + unaPersona.nombre + " " + unaPersona.dni);
+
+        var arrayPersonas = 
+        [ 
+            { nombre: "Guillermo Salcedo", edad: 30 },
+            { nombre: "Juan Perez", edad: 25 } 
+        ];
+
+        alert(arrayPersonas[1].edad);
+
+        arrayPersonas.push( 15 ); //push agrega al final un elemento
+
+    </script>
+</body>
+</html>

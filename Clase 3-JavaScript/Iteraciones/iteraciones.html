@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var notas = [];
+
+           /* var cantNotas = Number(prompt("Ingrese cantidad de notas: "));
+
+            for (var i = 0; i < cantNotas; i++) //los ciclos for esta pensado cuando se cuantas veces se sabe q va a iterar
+            {
+                nota = Number(prompt("Ingrese la nota numero " + (i + 1)));
+                notas.push(nota);
+            }
+
+            while ( confirm("Desea ingresar una nota? ") )
+            {
+                nota = Number(prompt("Ingrese una nota: "));
+                notas.push(nota);
+            }*/
+
+            do
+            {
+                nota = Number(prompt("Ingrese una nota: "));
+                notas.push(nota);
+
+            }while (confirm("Desea ingresar una nota? ")); //continue termina la vuelta en el bucle y break termina con todo el bucle
+
+            alert(notas);
+
+            var suma = 0;
+
+            for (var i = 0; i < notas.length; i++)
+            {
+                suma = suma + notas[i]; 
+            }
+
+            var promedio = suma / notas.length;
+
+            alert(promedio);
+
+    </script>
+</body>
+</html>
