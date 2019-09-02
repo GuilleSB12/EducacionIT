@@ -1,0 +1,22 @@
+/*dhdfhd css color picker*/
+
+body
+{
+    background-color: blue;
+    color: yellow;
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+p
+{
+    background-color: brown;
+    padding: 12px;
+}
+
+a
+{
+    color: yellow;
+    font-weight: bold;
+    text-decoration: none;
+}
